@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{model_name}",
+ "creation": "2023-08-16 15:48:42.223652",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "model_name",
+  "base_price",
+  "available_colours",
+  "insurance_options",
+  "accessories"
+ ],
+ "fields": [
+  {
+   "fieldname": "model_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Model Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "base_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Base Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "available_colours",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Available Colours",
+   "reqd": 1
+  },
+  {
+   "fieldname": "insurance_options",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Insurance Options",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "accessories",
+   "fieldtype": "Check",
+   "label": "Accessories"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-16 15:49:22.365896",
+ "modified_by": "Administrator",
+ "module": "W2-CRP",
+ "name": "Vehicle",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

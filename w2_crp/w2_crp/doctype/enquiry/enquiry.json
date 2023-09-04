@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ENQ-{########}",
+ "creation": "2023-08-16 15:52:24.726312",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "salesperson",
+  "customer",
+  "vehicle_model",
+  "vehicle_image_link",
+  "selected_insurance",
+  "accessories",
+  "total_cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "salesperson",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Salesperson",
+   "options": "Salesperson",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle_model",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle Model",
+   "options": "Vehicle Model",
+   "reqd": 1
+  },
+  {
+   "fieldname": "selected_insurance",
+   "fieldtype": "Select",
+   "label": "Selected Insurance",
+   "options": "ICICI\nBAJAJ",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "accessories",
+   "fieldtype": "Check",
+   "label": "Accessories",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost",
+   "non_negative": 1,
+   "precision": "0",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "vehicle_model.model_image",
+   "fieldname": "vehicle_image_link",
+   "fieldtype": "Read Only",
+   "label": "Vehicle Image Link"
+  }
+ ],
+ "links": [],
+ "modified": "2023-08-22 19:45:32.353542",
+ "modified_by": "Administrator",
+ "module": "W2-CRP",
+ "name": "Enquiry",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
